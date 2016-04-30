@@ -10,7 +10,7 @@ TeXDocker supports compiling all kinds of documents you have in the host system.
 ## Usage
 Build the image using the following command `docker build -t texdocker {DOCKERFILE_DIR}` where `{DOCKERFILE_DIR}` is the directory where the cloned Dockerfile from this repository is stored. For example, `docker build -t texdocker .` will build the Dockerfile stored in the current working path.
 
-After building the image with the `texdocker` tag, issue the command `docker run --rm -v {DOCUMENT_PATH}:/tmp:rw -i texdocker < {DOCUMENT_FILENAME}.tex  > {DOCUMENT_FILENAME}.pdf` to compile a \LaTeX{} document. where `{DOCUMENT_PATH}` is the directory where the document in \LaTeX{} format is stored (and where the bibliography, image files and other dependencies are stored too) and `DOCUMENT_FILENAME`is the name of the document file. As an example, you can use the `example.tex` document from this repository to test \TeX Docker.
+After building the image with the `texdocker` tag, issue the command `docker run --rm -v {DOCUMENT_PATH}:/tmp:rw -i texdocker < {DOCUMENT_FILENAME}.tex  > {DOCUMENT_FILENAME}.pdf` to compile a LaTeX document. where `{DOCUMENT_PATH}` is the directory where the document in LaTeX format is stored (and where the bibliography, image files and other dependencies are stored too) and `DOCUMENT_FILENAME`is the name of the document file. As an example, you can use the `example.tex` document from this repository to test TeX Docker.
 
 If you are using Windows or OS X, please notice that, due to [limitations of Docker Machine](https://docs.docker.com/engine/userguide/containers/dockervolumes/#mount-a-host-directory-as-a-data-volume), `{DOCUMENT_PATH}` must be in `/Users` directory (OS X) or `C:\Users` directory (Windows).
 
