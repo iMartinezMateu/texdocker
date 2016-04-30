@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{\TeX Docker}
+\author{Created by Ivan Martinez Mateu}
+\date{\today}
+\begin{document}
+  \maketitle
+  \TeX Docker is a container that runs on Docker and contains a full \TeX{} Live distribution, so it can be used to compile a document on the host system. It supports \LaTeX{} which was originally written 
+  in 1984 by Leslie Lamport and has become the dominant method for
+  using \TeX;
+ 
+  % This is a comment, not shown in final output.
+  % The following shows typesetting power of LaTeX:
+  \begin{align}
+    E_0 &= mc^2                              \\
+    E &= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
+  \end{align}
+
+
+ \TeX Docker  even supports images! This photo was taken by Laura Poitras/Praxis Films
+
+  \includegraphics[height=5cm, keepaspectratio]{snowden}
+\end{document}
+        
